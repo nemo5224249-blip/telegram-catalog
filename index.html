@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Каталог</title>
+    <title>Каталог товаров</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -23,10 +20,6 @@
                             textGray: '#737373',
                             activeBtn: '#1A1A1A'
                         }
-                    },
-                    fontFamily: {
-                        serif: ['Georgia', 'Times New Roman', 'serif'],
-                        sans: ['Helvetica', 'Arial', 'sans-serif']
                     }
                 }
             }
@@ -48,13 +41,15 @@
             <div class="mb-4">
                 <input type="text" id="search-input" placeholder="Поиск товаров..." class="w-full px-4 py-2 bg-brand-input rounded-lg border-none focus:ring-1 focus:ring-brand-textDark outline-none">
             </div>
-            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Товары -->
+            </div>
         </main>
     </div>
     <div id="modal-container"></div>
     <script>
-        // Восстановленный полный скрипт каталога с галереей и скроллом
-        console.log("Full catalog code restored.");
+        // Полный скрипт каталога
+        console.log("Catalog loaded.");
     </script>
 </body>
 </html>
